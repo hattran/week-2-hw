@@ -19,11 +19,11 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/circle mask.png": {
+	"/deploy/img/circle-mask.png": {
 		"ft": 32768,
 		"iS": 111277,
 		"oA": 0,
-		"oAP": "/deploy/img/circle mask.png",
+		"oAP": "/deploy/img/circle-mask.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -63,12 +63,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/hero 2.jpg": {
+	"/deploy/img/hero-2.jpg": {
 		"ft": 16384,
 		"iS": 113089,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/hero 2.jpg",
+		"oAP": "/deploy/img/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -85,12 +85,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/left side.jpg": {
+	"/deploy/img/left-side.jpg": {
 		"ft": 16384,
 		"iS": 61615,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/left side.jpg",
+		"oAP": "/deploy/img/left-side.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
