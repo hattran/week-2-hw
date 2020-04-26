@@ -1,0 +1,22 @@
+/* =============
+    Section 3
+============= */
+
+#section-3{
+
+    article{
+        img{
+            width: 100%;
+        }
+    }
+
+    #section-3-text{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section-3-text .";
+
+        article{
+            grid-area: section-3-text;
+        }
+    }
+}  

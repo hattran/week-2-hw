@@ -1,0 +1,16 @@
+/* =============
+    Section 4
+============= */
+
+#section-4{
+    ul{
+        display: grid;
+        gap: 20px;
+        
+        li{
+            img{
+                width: 100%
+            }
+        }
+    }
+}

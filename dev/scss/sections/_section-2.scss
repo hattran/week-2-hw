@@ -1,0 +1,22 @@
+/* =============
+    Section 2
+============= */
+
+#section-2{
+
+    #section-2-text{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". article-1 .";
+
+        article{
+        grid-area: article-1;
+        }
+    }
+
+   aside{
+        img{
+        width: 100%
+        }
+}
+}
