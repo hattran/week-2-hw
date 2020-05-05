@@ -5,12 +5,36 @@
 #section-5{
     display: grid;
     grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". content .";
+    grid-template-areas: ". section-5-content .";
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
     #section-5-content{
-        grid-area: content;
-        img{
-            width: 100%;
+        display: grid;
+        grid-area: section-5-content;
+        grid-template-rows: 2;
+        grid-template-areas:
+        "section-5-photo"
+        "section-5-text";
+        grid-gap: 20px;
+
+        @include lg{
+            grid-template-columns: 30% 70%;
+            grid-template-areas: "section-5-photo section-5-text";
+        }
+
+        #section-5-photo{
+            grid-area: section-5-photo;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        #section-5-text{
+            grid-area: section-5-text;
         }
     }
 }

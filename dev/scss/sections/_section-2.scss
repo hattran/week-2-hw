@@ -4,19 +4,65 @@
 
 #section-2{
 
-    #section-2-text{
+    @include xl{
         display: grid;
-        grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". article-1 .";
-
-        article{
-        grid-area: article-1;
-        }
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-desktop .";
     }
 
-   aside{
-        img{
-        width: 100%
+    #section-2-desktop{
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "section-2-photo section-2";
         }
-}
+
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "section-2-photo section-2";
+        }
+
+        @include xl{
+            grid-area: section-2-desktop;
+        }
+        
+            aside{
+                img{
+                    width: 100%;
+                }
+            }
+
+        #section-2-container{
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". article-1 .";
+            grid-gap: 20px;
+
+            @include md{
+                grid-template-columns: 10% auto 10%;
+            }
+
+            @include xl{
+                grid-template-columns: auto 1200px auto;
+            }
+
+        }
+
+        #section-2-content{
+            grid-area: article-1;
+        }
+
+        #section-2-photo{
+            grid-area: section-2-photo;
+        }
+    
+    }
+
+    //#section-2-photo{
+    //    img{
+    //    width: 100%
+    //    }
+    //}
 }

@@ -3,14 +3,54 @@
 ============= */
 
 #section-4{
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". section-4 .";
+
     ul{
+        grid-area: section-4;
         display: grid;
-        gap: 20px;
+        grid-template-columns: none;
+        grid-gap: 20px;
         
         li{
             img{
-                width: 100%
+                width: 100%;
             }
+        }
+
+        @include sm{
+            grid-template-columns: none;
+            grid-template-areas:
+                "gallery-1"
+                "gallery-2"
+                "gallery-3";
+        }
+
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "gallery-1 gallery-1"
+                "gallery-2 gallery-3";
+        }
+
+        @include lg{
+            grid-template-columns: 60% 40%;
+            grid-template-areas:
+                "gallery-1 gallery-2"
+                "gallery-1 gallery-3";
+        }
+
+        #gallery-1{
+            grid-area: gallery-1;
+        }
+
+        #gallery-2{
+            grid-area: gallery-2;
+        }
+
+        #gallery-3{
+            grid-area: gallery-3;
         }
     }
 }
