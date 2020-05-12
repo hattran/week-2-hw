@@ -442,10 +442,6 @@ textarea {
     grid-gap: 20px; }
     #section-4 ul li img {
       width: 100%; }
-    @media (min-width: 576px) {
-      #section-4 ul {
-        grid-template-columns: none;
-        grid-template-areas: "gallery-1" "gallery-2" "gallery-3"; } }
     @media (min-width: 768px) {
       #section-4 ul {
         grid-template-columns: 50% auto;

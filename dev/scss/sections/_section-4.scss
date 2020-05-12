@@ -19,14 +19,6 @@
             }
         }
 
-        @include sm{
-            grid-template-columns: none;
-            grid-template-areas:
-                "gallery-1"
-                "gallery-2"
-                "gallery-3";
-        }
-
         @include md{
             grid-template-columns: 50% auto;
             grid-template-areas:
