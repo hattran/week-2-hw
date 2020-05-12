@@ -4,7 +4,7 @@
 
 #section-4{
     display: grid;
-    grid-template-columns: 10px auto 10px;
+    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-4 .";
 
     ul{
@@ -19,30 +19,36 @@
             }
         }
 
+        grid-template-rows: 3(1fr);
+        grid-template-areas: 
+        "g1"
+        "g2"
+        "g3";
+
         @include md{
             grid-template-columns: 50% auto;
             grid-template-areas:
-                "gallery-1 gallery-1"
-                "gallery-2 gallery-3";
+                "g1 g1"
+                "g2 g3";
         }
 
         @include lg{
             grid-template-columns: 60% 40%;
             grid-template-areas:
-                "gallery-1 gallery-2"
-                "gallery-1 gallery-3";
+                "g1 g2"
+                "g1 g3";
         }
 
-        #gallery-1{
-            grid-area: gallery-1;
+        #g1{
+            grid-area: g1;
         }
 
-        #gallery-2{
-            grid-area: gallery-2;
+        #g2{
+            grid-area: g2;
         }
 
-        #gallery-3{
-            grid-area: gallery-3;
+        #g3{
+            grid-area: g3;
         }
     }
 }
