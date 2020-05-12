@@ -2,3 +2,20 @@
     Footer
 ============= */
 
+#footer{
+    
+    ul{
+        background-color: $light-green;
+        padding: 10px;
+        display: flex;
+
+        img{
+            justify-content: center;
+        }
+        
+        h6{
+            color: $white;
+            text-align: right;
+        }
+    }
+}

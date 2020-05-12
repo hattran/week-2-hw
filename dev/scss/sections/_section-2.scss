@@ -10,7 +10,7 @@
         grid-template-areas: ". section-2-desktop .";
     }
 
-    #section-2-desktop{
+    #section-2-container{
 
         @include lg{
             display: grid;
@@ -28,30 +28,31 @@
             grid-area: section-2-desktop;
         }
         
-            aside{
-                img{
-                    width: 100%;
-                }
+        aside{
+            img{
+                width: 100%;
             }
+        }
 
-        #section-2-container{
+        #section-2-content{
             display: grid;
             grid-template-columns: 15px auto 15px;
-            grid-template-areas: ". article-1 .";
+            grid-template-areas: ". section-2-text .";
             grid-gap: 20px;
 
             @include md{
                 grid-template-columns: 10% auto 10%;
             }
 
-            @include xl{
-                grid-template-columns: auto 1200px auto;
-            }
-
         }
 
-        #section-2-content{
-            grid-area: article-1;
+        #section-2-text{
+            grid-area: section-2-text;
+
+            @include lg{
+                display: block;
+                margin: auto 0;
+            }
         }
 
         #section-2-photo{
@@ -59,10 +60,4 @@
         }
     
     }
-
-    //#section-2-photo{
-    //    img{
-    //    width: 100%
-    //    }
-    //}
 }

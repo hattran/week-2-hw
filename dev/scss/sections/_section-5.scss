@@ -6,7 +6,8 @@
 
     p{
         text-align: justify;
-        font-size: 17px;
+        font-size: 18px;
+        color: $brown;
     }
 
     display: grid;
@@ -26,24 +27,9 @@
         "section-5-text";
         grid-gap: 20px;
 
-        @include md{
-            #section-5-text{
-                display:block;
-                margin-left: 90px;
-                margin-right: 90px;
-                font-size: 18px;
-            }
-        }
-
         @include lg{
             grid-template-columns: 30% 70%;
             grid-template-areas: "section-5-photo section-5-text";
-
-            #section-5-text{
-                display:block;
-                margin-top: 100px;
-                font-size: 18px;
-            }
         }
 
         #section-5-photo{
@@ -51,18 +37,24 @@
 
             img{
                 display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 20px;
-            }
+                margin: 20px auto;
 
-            // img{
-            //    width: 100%;
-            // }
+                @include lg{
+                    margin: 20px auto 40px;
+                }
+            }
         }
 
         #section-5-text{
             grid-area: section-5-text;
+
+            @include md{
+                margin: 0 90px 40px;
+            }
+
+            @include lg{
+                margin: auto 100px;
+            }
         }
     }
 }
