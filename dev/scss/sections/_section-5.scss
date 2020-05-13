@@ -1,74 +1,68 @@
 /* =============
     Section 5
 ============= */
-
-#section-5{
-
-    p{
-        text-align: justify;
+#section-5 {
+    p {
+        color: $brown;
         font-size: 18px;
         line-height: 25px;
-        color: $brown;
+        text-align: justify;
     }
 
-    @include xl{
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-5-desktop .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    #section-5-container{
-        grid-area: section-5-desktop;
-        
+    #section-5-container {
         display: grid;
-        grid-template-columns: 15px auto 15px;
+        grid-area: section-5-desktop;
         grid-template-areas: ". section-5-content .";
+        grid-template-columns: 15px auto 15px;
 
-        @include xl{
+        @include xl {
             grid-template-columns: auto 1200px auto;
         }
 
-        #section-5-content{
+        #section-5-content {
             display: grid;
             grid-area: section-5-content;
-            grid-template-rows: 2;
-            grid-template-areas:
-            "section-5-photo"
-            "section-5-text";
             grid-gap: 20px;
+            grid-template-areas: "section-5-photo"
+                "section-5-text";
+            grid-template-rows: 2;
 
-            @include lg{
-                grid-template-columns: 30% 70%;
+            @include lg {
                 grid-template-areas: "section-5-photo section-5-text";
+                grid-template-columns: 30% 70%;
             }
 
-            #section-5-photo{
-                grid-area: section-5-photo;
-
+            #section-5-photo {
                 background-image: url("../img/circle.jpg");
-                background-size: cover;
-                height: 320px;
-                width: 320px;
                 background-position: bottom;
+                background-size: cover;
                 border-radius: 160px;
-
                 display: block;
+                grid-area: section-5-photo;
+                height: 320px;
                 margin: 30px auto 10px;
+                width: 320px;
 
-                @include lg{
+                @include lg {
                     margin: 20px auto 40px 40px;
                 }
             }
 
-            #section-5-text{
+            #section-5-text {
                 grid-area: section-5-text;
                 margin: 0 0 30px;
 
-                @include md{
+                @include md {
                     margin: 0 90px 40px;
                 }
 
-                @include lg{
+                @include lg {
                     margin: auto 100px;
                 }
             }

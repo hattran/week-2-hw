@@ -1,25 +1,22 @@
 /* =============
     Section 1
 ============= */
-
-#section-1{
-
+#section-1 {
+    background-image: url("../img/hero.jpg");
+    background-position: top right;
+    background-size: cover;
+    height: 50vh;
     margin-top: 80px;
 
-    background-image: url("../img/hero.jpg");
-    background-size: cover;
-    background-position: top right;
-    height: 50vh;
-
-    @include md{
+    @include md {
         height: 60vh;
     }
 
-    @include lg{
+    @include lg {
         height: 70vh;
     }
 
-    @include xl{
+    @include xl {
         height: 85vh;
     }
 }

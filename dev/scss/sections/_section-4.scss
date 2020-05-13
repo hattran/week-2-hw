@@ -1,84 +1,79 @@
 /* =============
     Section 4
 ============= */
-
-#section-4{
+#section-4 {
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-4 .";
+    grid-template-columns: 15px auto 15px;
 
-    @include xl{
-        grid-template-columns: auto 1200px auto;
+    @include xl {
         grid-template-areas: ". section-4 .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    ul{
-        grid-area: section-4;
+    ul {
         display: grid;
+        grid-area: section-4;
         grid-gap: 20px;
-        
-        li{
-            background-size: cover;
+        grid-template-areas: "g1"
+            "g2"
+            "g3";
+        grid-template-rows: 3(1fr);
+
+        li {
             background-position: bottom;
+            background-size: cover;
             height: 300px;
         }
 
-        grid-template-rows: 3(1fr);
-        grid-template-areas: 
-        "g1"
-        "g2"
-        "g3";
-
-        @include md{
-            grid-template-columns: 50% auto;
-            grid-template-areas:
-                "g1 g1"
+        @include md {
+            grid-template-areas: "g1 g1"
                 "g2 g3";
+            grid-template-columns: 50% auto;
         }
 
-        @include lg{
-            grid-template-columns: 60% 40%;
-            grid-template-areas:
-                "g1 g2"
+        @include lg {
+            grid-template-areas: "g1 g2"
                 "g1 g3";
+            grid-template-columns: 60% 40%;
         }
 
-        #g1{
+        #g1 {
             background-image: url("../img/gallery-1.jpg");
             grid-area: g1;
 
-            @include md{
+            @include md {
                 height: 700px;
             }
 
-            @include lg{
+            @include lg {
                 height: 820px;
             }
         }
 
-        #g2{
+        #g2 {
             background-image: url("../img/gallery-2.jpg");
             grid-area: g2;
 
-            @include lg{
+            @include lg {
                 height: 400px;
             }
         }
 
-        #g3{
+        #g3 {
             background-image: url("../img/gallery-3.jpg");
-            grid-area: g3;
             background-size: 600px;
+            grid-area: g3;
 
-            @include md{
-                background-size: 700px;
+            @include md {
                 background-position: -200px -660px;
+                background-size: 700px;
             }
 
-            @include lg{
-                height: 400px;
-                background-size: 800px;
+            @include lg {
                 background-position: bottom;
+                background-size: 800px;
+                height: 400px;
             }
         }
     }

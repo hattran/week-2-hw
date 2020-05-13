@@ -443,11 +443,11 @@ header {
     Section 1
 ============= */
 #section-1 {
-  margin-top: 80px;
   background-image: url("../img/hero.jpg");
-  background-size: cover;
   background-position: top right;
-  height: 50vh; }
+  background-size: cover;
+  height: 50vh;
+  margin-top: 80px; }
   @media (min-width: 768px) {
     #section-1 {
       height: 60vh; } }
@@ -463,20 +463,20 @@ header {
 @media (min-width: 1200px) {
   #section-2 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-2-desktop ."; } }
+    grid-template-areas: ". section-2-desktop .";
+    grid-template-columns: auto 1200px auto; } }
 
 @media (min-width: 992px) {
   #section-2 #section-2-container {
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "section-2-photo section-2"; } }
+    grid-template-areas: "section-2-photo section-2";
+    grid-template-columns: 50% auto; } }
 
 @media (min-width: 768px) {
   #section-2 #section-2-container {
     display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-areas: "section-2-photo section-2"; } }
+    grid-template-areas: "section-2-photo section-2";
+    grid-template-columns: 40% auto; } }
 
 @media (min-width: 1200px) {
   #section-2 #section-2-container {
@@ -484,9 +484,9 @@ header {
 
 #section-2 #section-2-container #section-2-content {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-gap: 20px;
   grid-template-areas: ". section-2-text .";
-  grid-gap: 20px; }
+  grid-template-columns: 15px auto 15px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-content {
       grid-template-columns: 10% auto 10%; } }
@@ -495,25 +495,25 @@ header {
   margin: 20px 0; }
   #section-2 #section-2-container #section-2-text h3 {
     color: #F1733C;
-    text-align: center;
     font-size: 1.5625rem;
-    margin: 25px 0 0; }
+    margin: 25px 0 0;
+    text-align: center; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-text h3 {
-        text-align: left;
-        font-size: 1.875rem; } }
+        font-size: 1.875rem;
+        text-align: left; } }
   #section-2 #section-2-container #section-2-text p {
-    text-align: center;
     font-size: 1.125rem;
-    margin: 15px 0 25px; }
+    margin: 15px 0 25px;
+    text-align: center; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-text p {
-        text-align: left;
-        font-size: 1.25rem; } }
+        font-size: 1.25rem;
+        text-align: left; } }
   #section-2 #section-2-container #section-2-text hr {
-    height: 2px;
     background-color: #7C9A80;
-    border: none; }
+    border: none;
+    height: 2px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-text {
       display: block;
@@ -523,11 +523,11 @@ header {
       display: block;
       margin: auto 0; } }
 #section-2 #section-2-container #section-2-photo {
-  grid-area: section-2-photo;
   background-image: url("../img/left-side.jpg");
-  height: 60vh;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  grid-area: section-2-photo;
+  height: 60vh;
   margin: 0 0 30px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container #section-2-photo {
@@ -541,71 +541,69 @@ header {
 ============= */
 #section-3 #section-3-hero {
   background-image: url("../img/hero-2.jpg");
-  height: 60vh;
+  background-position: -35px 0;
   background-size: cover;
-  background-position: -35px 0; }
+  height: 60vh; }
   @media (min-width: 768px) {
     #section-3 #section-3-hero {
-      height: 55vh;
-      background-position: center; } }
+      background-position: center;
+      height: 55vh; } }
   @media (min-width: 992px) {
     #section-3 #section-3-hero {
       height: 80vh; } }
 #section-3 #section-3-text {
-  grid-area: section-3-content;
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-3-text ."; }
+  grid-area: section-3-content;
+  grid-template-areas: ". section-3-text .";
+  grid-template-columns: 15px auto 15px; }
   #section-3 #section-3-text h2 {
     color: #FDAF01;
-    text-align: center;
-    font-size: 1.875rem; }
+    font-size: 1.875rem;
+    text-align: center; }
   #section-3 #section-3-text hr {
-    height: 2px;
     background-color: #7C9A80;
-    border: none; }
+    border: none;
+    height: 2px; }
   #section-3 #section-3-text article {
     grid-area: section-3-text;
     margin: 20px 0 10px; }
   @media (min-width: 768px) {
     #section-3 #section-3-text {
       display: grid;
-      grid-template-columns: 10% auto 10%;
-      grid-template-areas: ". section-3-text ."; } }
+      grid-template-columns: 10% auto 10%; } }
   @media (min-width: 992px) {
     #section-3 #section-3-text {
       display: grid;
-      grid-template-columns: 30% auto 30%;
-      grid-template-areas: ". section-3-text ."; } }
+      grid-template-columns: 30% auto 30%; } }
 /* =============
     Section 4
 ============= */
 #section-4 {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: ". section-4 .";
+  grid-template-columns: 15px auto 15px; }
   @media (min-width: 1200px) {
     #section-4 {
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". section-4 ."; } }
+      grid-template-areas: ". section-4 .";
+      grid-template-columns: auto 1200px auto; } }
   #section-4 ul {
-    grid-area: section-4;
     display: grid;
+    grid-area: section-4;
     grid-gap: 20px;
-    grid-template-rows: 3 1fr;
-    grid-template-areas: "g1" "g2" "g3"; }
+    grid-template-areas: "g1" "g2" "g3";
+    grid-template-rows: 3 1fr; }
     #section-4 ul li {
-      background-size: cover;
       background-position: bottom;
+      background-size: cover;
       height: 300px; }
     @media (min-width: 768px) {
       #section-4 ul {
-        grid-template-columns: 50% auto;
-        grid-template-areas: "g1 g1" "g2 g3"; } }
+        grid-template-areas: "g1 g1" "g2 g3";
+        grid-template-columns: 50% auto; } }
     @media (min-width: 992px) {
       #section-4 ul {
-        grid-template-columns: 60% 40%;
-        grid-template-areas: "g1 g2" "g1 g3"; } }
+        grid-template-areas: "g1 g2" "g1 g3";
+        grid-template-columns: 60% 40%; } }
     #section-4 ul #g1 {
       background-image: url("../img/gallery-1.jpg");
       grid-area: g1; }
@@ -623,60 +621,60 @@ header {
           height: 400px; } }
     #section-4 ul #g3 {
       background-image: url("../img/gallery-3.jpg");
-      grid-area: g3;
-      background-size: 600px; }
+      background-size: 600px;
+      grid-area: g3; }
       @media (min-width: 768px) {
         #section-4 ul #g3 {
-          background-size: 700px;
-          background-position: -200px -660px; } }
+          background-position: -200px -660px;
+          background-size: 700px; } }
       @media (min-width: 992px) {
         #section-4 ul #g3 {
-          height: 400px;
+          background-position: bottom;
           background-size: 800px;
-          background-position: bottom; } }
+          height: 400px; } }
 /* =============
     Section 5
 ============= */
 #section-5 p {
-  text-align: justify;
+  color: #AA700F;
   font-size: 18px;
   line-height: 25px;
-  color: #AA700F; }
+  text-align: justify; }
 
 @media (min-width: 1200px) {
   #section-5 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-5-desktop ."; } }
+    grid-template-areas: ". section-5-desktop .";
+    grid-template-columns: auto 1200px auto; } }
 
 #section-5 #section-5-container {
-  grid-area: section-5-desktop;
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-5-content ."; }
+  grid-area: section-5-desktop;
+  grid-template-areas: ". section-5-content .";
+  grid-template-columns: 15px auto 15px; }
   @media (min-width: 1200px) {
     #section-5 #section-5-container {
       grid-template-columns: auto 1200px auto; } }
   #section-5 #section-5-container #section-5-content {
     display: grid;
     grid-area: section-5-content;
-    grid-template-rows: 2;
+    grid-gap: 20px;
     grid-template-areas: "section-5-photo" "section-5-text";
-    grid-gap: 20px; }
+    grid-template-rows: 2; }
     @media (min-width: 992px) {
       #section-5 #section-5-container #section-5-content {
-        grid-template-columns: 30% 70%;
-        grid-template-areas: "section-5-photo section-5-text"; } }
+        grid-template-areas: "section-5-photo section-5-text";
+        grid-template-columns: 30% 70%; } }
     #section-5 #section-5-container #section-5-content #section-5-photo {
-      grid-area: section-5-photo;
       background-image: url("../img/circle.jpg");
-      background-size: cover;
-      height: 320px;
-      width: 320px;
       background-position: bottom;
+      background-size: cover;
       border-radius: 160px;
       display: block;
-      margin: 30px auto 10px; }
+      grid-area: section-5-photo;
+      height: 320px;
+      margin: 30px auto 10px;
+      width: 320px; }
       @media (min-width: 992px) {
         #section-5 #section-5-container #section-5-content #section-5-photo {
           margin: 20px auto 40px 40px; } }

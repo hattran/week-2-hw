@@ -1,104 +1,99 @@
 /* =============
     Section 2
 ============= */
-
-#section-2{
-
-    @include xl{
+#section-2 {
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-desktop .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    #section-2-container{
-
-        @include lg{
+    #section-2-container {
+        @include lg {
             display: grid;
+            grid-template-areas: "section-2-photo section-2";
             grid-template-columns: 50% auto;
-            grid-template-areas: "section-2-photo section-2";
         }
 
-        @include md{
+        @include md {
             display: grid;
-            grid-template-columns: 40% auto;
             grid-template-areas: "section-2-photo section-2";
+            grid-template-columns: 40% auto;
         }
 
-        @include xl{
+        @include xl {
             grid-area: section-2-desktop;
         }
 
-        #section-2-content{
+        #section-2-content {
             display: grid;
-            grid-template-columns: 15px auto 15px;
-            grid-template-areas: ". section-2-text .";
             grid-gap: 20px;
+            grid-template-areas: ". section-2-text .";
+            grid-template-columns: 15px auto 15px;
 
-            @include md{
+            @include md {
                 grid-template-columns: 10% auto 10%;
             }
-
         }
 
-        #section-2-text{
+        #section-2-text {
             grid-area: section-2-text;
             margin: 20px 0;
 
-            h3{
+            h3 {
                 color: $orange;
-                text-align: center;
                 font-size: rem-calc(25);
                 margin: 25px 0 0;
+                text-align: center;
 
-                @include md{
-                    text-align: left;
+                @include md {
                     font-size: rem-calc(30);
+                    text-align: left;
                 }
             }
 
-            p{
-                text-align: center;
+            p {
                 font-size: rem-calc(18);
                 margin: 15px 0 25px;
+                text-align: center;
 
-                @include md{
-                    text-align: left;
+                @include md {
                     font-size: rem-calc(20);
+                    text-align: left;
                 }
             }
 
-            hr{
-                height: 2px;
+            hr {
                 background-color: $light-green;
                 border: none;
+                height: 2px;
             }
 
-            @include md{
+            @include md {
                 display: block;
                 margin: auto 0;
             }
 
-            @include lg{
+            @include lg {
                 display: block;
                 margin: auto 0;
             }
         }
 
-        #section-2-photo{
-            grid-area: section-2-photo;
-
+        #section-2-photo {
             background-image: url("../img/left-side.jpg");
-            height: 60vh;
-            background-size: cover;
             background-position: center;
+            background-size: cover;
+            grid-area: section-2-photo;
+            height: 60vh;
             margin: 0 0 30px;
 
-            @include md{
+            @include md {
                 height: 50vh;
                 margin: 30px 0;
             }
 
-            @include lg{
+            @include lg {
                 height: 60vh;
             }
         }

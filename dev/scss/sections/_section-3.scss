@@ -1,60 +1,54 @@
 /* =============
     Section 3
 ============= */
-
-#section-3{
-
-    #section-3-hero{
+#section-3 {
+    #section-3-hero {
         background-image: url("../img/hero-2.jpg");
-        height: 60vh;
-        background-size: cover;
         background-position: -35px 0;
+        background-size: cover;
+        height: 60vh;
 
-        @include md{
-            height: 55vh;
+        @include md {
             background-position: center;
+            height: 55vh;
         }
 
-        @include lg{
+        @include lg {
             height: 80vh;
         }
     }
 
-    #section-3-text{
-
+    #section-3-text {
+        display: grid;
         grid-area: section-3-content;
+        grid-template-areas: ". section-3-text .";
+        grid-template-columns: 15px auto 15px;
 
-        h2{
+        h2 {
             color: $yellow;
-            text-align: center;
             font-size: rem-calc(30);
+            text-align: center;
         }
 
-        hr{
-            height: 2px;
+        hr {
             background-color: $light-green;
             border: none;
+            height: 2px;
         }
 
-        display: grid;
-        grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". section-3-text .";
-
-        article{
+        article {
             grid-area: section-3-text;
             margin: 20px 0 10px;
         }
 
-        @include md{
+        @include md {
             display: grid;
             grid-template-columns: 10% auto 10%;
-            grid-template-areas: ". section-3-text ."
         }
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: 30% auto 30%;
-            grid-template-areas: ". section-3-text ."
         }
     }
-}  
+}
