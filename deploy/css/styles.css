@@ -424,19 +424,20 @@ header {
 /* =============
     Footer
 ============= */
-#footer ul {
-  background-color: #7C9A80;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  #footer ul li:last-child {
+#footer {
+  background-color: #7C9A80; }
+  #footer article {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0; }
+  #footer aside {
+    display: flex;
     justify-content: flex-end; }
-  #footer ul h6 {
-    font-weight: 300;
-    color: #fff; }
+    #footer aside h6 {
+      font-weight: 300;
+      color: #fff;
+      margin: 0 0; }
 
 /* =============
     Section 1
@@ -453,6 +454,9 @@ header {
   @media (min-width: 992px) {
     #section-1 {
       height: 70vh; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 85vh; } }
 /* =============
     Section 2
 ============= */
@@ -580,6 +584,10 @@ header {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-4 ."; } }
   #section-4 ul {
     grid-area: section-4;
     display: grid;

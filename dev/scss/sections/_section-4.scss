@@ -7,10 +7,14 @@
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-4 .";
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-4 .";
+    }
+
     ul{
         grid-area: section-4;
         display: grid;
-        // grid-template-columns: 15px auto 15px;
         grid-gap: 20px;
         
         li{

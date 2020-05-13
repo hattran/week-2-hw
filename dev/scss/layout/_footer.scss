@@ -3,23 +3,23 @@
 ============= */
 
 #footer{
-    ul{
-        background-color: $light-green;
-        margin: 0;
-        // padding: 10px;
+    background-color: $light-green;
+    
+    article{
         display: flex;
         justify-content: center;
         align-items: center;
-
-        li:last-child{
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-        }
-        
+        padding: 10px 0 0;
+    }
+    
+    aside{
+        display: flex;
+        justify-content: flex-end;
+    
         h6{
             font-weight: 300;
             color: $white;
+            margin: 0 0;
         }
     }
 }

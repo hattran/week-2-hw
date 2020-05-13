@@ -18,4 +18,8 @@
     @include lg{
         height: 70vh;
     }
+
+    @include xl{
+        height: 85vh;
+    }
 }
