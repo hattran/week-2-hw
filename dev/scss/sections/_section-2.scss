@@ -27,12 +27,6 @@
         @include xl{
             grid-area: section-2-desktop;
         }
-        
-        aside{
-            img{
-                width: 100%;
-            }
-        }
 
         #section-2-content{
             display: grid;
@@ -54,12 +48,22 @@
                 color: $orange;
                 text-align: center;
                 font-size: rem-calc(25);
+
+                @include md{
+                    text-align: left;
+                    font-size: rem-calc(30);
+                }
             }
 
             p{
                 text-align: center;
                 font-size: rem-calc(18);
                 padding: 0 0 10px;
+
+                @include md{
+                    text-align: left;
+                    font-size: rem-calc(20);
+                }
             }
 
             hr{
@@ -81,6 +85,15 @@
 
         #section-2-photo{
             grid-area: section-2-photo;
+
+            img{
+                width: 100%;
+                padding: 0 0 30px;
+
+                @include md{
+                    padding: 30px 0;
+                }
+            }
         }
     
     }

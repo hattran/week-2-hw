@@ -405,9 +405,6 @@ textarea {
   #section-2 #section-2-container {
     grid-area: section-2-desktop; } }
 
-#section-2 #section-2-container aside img {
-  width: 100%; }
-
 #section-2 #section-2-container #section-2-content {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -423,10 +420,18 @@ textarea {
     color: #F1733C;
     text-align: center;
     font-size: 1.5625rem; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-container #section-2-text h3 {
+        text-align: left;
+        font-size: 1.875rem; } }
   #section-2 #section-2-container #section-2-text p {
     text-align: center;
     font-size: 1.125rem;
     padding: 0 0 10px; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-container #section-2-text p {
+        text-align: left;
+        font-size: 1.25rem; } }
   #section-2 #section-2-container #section-2-text hr {
     height: 2px;
     background-color: #7C9A80;
@@ -441,7 +446,12 @@ textarea {
       margin: auto 0; } }
 #section-2 #section-2-container #section-2-photo {
   grid-area: section-2-photo; }
-
+  #section-2 #section-2-container #section-2-photo img {
+    width: 100%;
+    padding: 0 0 30px; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-container #section-2-photo img {
+        padding: 30px 0; } }
 /* =============
     Section 3
 ============= */
