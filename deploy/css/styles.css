@@ -442,10 +442,17 @@ header {
     Section 1
 ============= */
 #section-1 {
-  margin-top: 80px; }
-  #section-1 img {
-    width: 100%; }
-
+  margin-top: 80px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top right;
+  height: 50vh; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 60vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 70vh; } }
 /* =============
     Section 2
 ============= */

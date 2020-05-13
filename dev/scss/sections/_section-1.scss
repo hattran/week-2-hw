@@ -6,7 +6,16 @@
 
     margin-top: 80px;
 
-    img{
-        width: 100%;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top right;
+    height: 50vh;
+
+    @include md{
+        height: 60vh;
+    }
+
+    @include lg{
+        height: 70vh;
     }
 }

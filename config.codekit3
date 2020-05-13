@@ -19,20 +19,20 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/circle-mask.png": {
-		"ft": 32768,
-		"iS": 111277,
+	"/deploy/img/circle.jpg": {
+		"ft": 16384,
+		"iS": 183707,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/circle-mask.png",
+		"oAP": "/deploy/img/circle.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/gallery-1.jpg": {
 		"ft": 16384,
-		"iS": 62963,
+		"iS": 208217,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/gallery-1.jpg",
@@ -43,7 +43,7 @@
 		},
 	"/deploy/img/gallery-2.jpg": {
 		"ft": 16384,
-		"iS": 22350,
+		"iS": 302587,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/gallery-2.jpg",
@@ -54,7 +54,7 @@
 		},
 	"/deploy/img/gallery-3.jpg": {
 		"ft": 16384,
-		"iS": 21169,
+		"iS": 82530,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/gallery-3.jpg",
@@ -65,7 +65,7 @@
 		},
 	"/deploy/img/hero-2.jpg": {
 		"ft": 16384,
-		"iS": 113089,
+		"iS": 181038,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/hero-2.jpg",
@@ -76,7 +76,7 @@
 		},
 	"/deploy/img/hero.jpg": {
 		"ft": 16384,
-		"iS": 219081,
+		"iS": 756447,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/hero.jpg",
@@ -87,7 +87,7 @@
 		},
 	"/deploy/img/left-side.jpg": {
 		"ft": 16384,
-		"iS": 61615,
+		"iS": 174840,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/left-side.jpg",
