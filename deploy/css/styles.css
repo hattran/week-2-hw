@@ -370,7 +370,7 @@ textarea {
         margin: 0px 30px 0 0; } }
     #nav-container ul li a:link,
     #nav-container ul li a:visited {
-      color: #F1733C;
+      color: #fff;
       text-decoration: none;
       transition: 0.25s; }
     #nav-container ul li a:hover,
@@ -381,7 +381,7 @@ textarea {
     Header
 ============= */
 header {
-  background-color: #fff;
+  background-color: #F1733C;
   left: 0;
   position: fixed;
   top: 0;
@@ -397,12 +397,16 @@ header {
     header > div #logo-container {
       grid-area: logo;
       padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #logo-container {
+          padding: 25px; } }
     header > div #burger-container {
       align-items: center;
       display: flex;
       grid-area: burger;
       justify-content: flex-end;
-      padding: 20px; }
+      padding: 20px;
+      color: #fff; }
       @media (min-width: 992px) {
         header > div #burger-container {
           display: none !important; } }
@@ -415,7 +419,7 @@ header {
       padding: 20px; }
       @media (min-width: 992px) {
         header > div #nav-container {
-          background-color: #fff;
+          background-color: #F1733C;
           display: block !important; } }
 /* =============
     Footer
@@ -437,8 +441,10 @@ header {
 /* =============
     Section 1
 ============= */
-#section-1 img {
-  width: 100%; }
+#section-1 {
+  margin-top: 80px; }
+  #section-1 img {
+    width: 100%; }
 
 /* =============
     Section 2
