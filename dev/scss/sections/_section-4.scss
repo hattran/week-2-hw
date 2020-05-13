@@ -10,13 +10,13 @@
     ul{
         grid-area: section-4;
         display: grid;
-        grid-template-columns: none;
+        // grid-template-columns: 15px auto 15px;
         grid-gap: 20px;
         
         li{
-            img{
-                width: 100%;
-            }
+            background-size: cover;
+            background-position: bottom;
+            height: 300px;
         }
 
         grid-template-rows: 3(1fr);
@@ -40,15 +40,42 @@
         }
 
         #g1{
+            background-image: url("../img/gallery-1.jpg");
             grid-area: g1;
+
+            @include md{
+                height: 700px;
+            }
+
+            @include lg{
+                height: 820px;
+            }
         }
 
         #g2{
+            background-image: url("../img/gallery-2.jpg");
             grid-area: g2;
+
+            @include lg{
+                height: 400px;
+            }
         }
 
         #g3{
+            background-image: url("../img/gallery-3.jpg");
             grid-area: g3;
+            background-size: 600px;
+
+            @include md{
+                background-size: 700px;
+                background-position: -200px -660px;
+            }
+
+            @include lg{
+                height: 400px;
+                background-size: 800px;
+                background-position: bottom;
+            }
         }
     }
 }

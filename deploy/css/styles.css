@@ -546,8 +546,7 @@ header {
       background-position: center; } }
   @media (min-width: 992px) {
     #section-3 #section-3-hero {
-      height: 80vh;
-      background-position: center; } }
+      height: 80vh; } }
 #section-3 #section-3-text {
   grid-area: section-3-content;
   display: grid;
@@ -584,12 +583,13 @@ header {
   #section-4 ul {
     grid-area: section-4;
     display: grid;
-    grid-template-columns: none;
     grid-gap: 20px;
     grid-template-rows: 3 1fr;
     grid-template-areas: "g1" "g2" "g3"; }
-    #section-4 ul li img {
-      width: 100%; }
+    #section-4 ul li {
+      background-size: cover;
+      background-position: bottom;
+      height: 300px; }
     @media (min-width: 768px) {
       #section-4 ul {
         grid-template-columns: 50% auto;
@@ -599,12 +599,33 @@ header {
         grid-template-columns: 60% 40%;
         grid-template-areas: "g1 g2" "g1 g3"; } }
     #section-4 ul #g1 {
+      background-image: url("../img/gallery-1.jpg");
       grid-area: g1; }
+      @media (min-width: 768px) {
+        #section-4 ul #g1 {
+          height: 700px; } }
+      @media (min-width: 992px) {
+        #section-4 ul #g1 {
+          height: 820px; } }
     #section-4 ul #g2 {
+      background-image: url("../img/gallery-2.jpg");
       grid-area: g2; }
+      @media (min-width: 992px) {
+        #section-4 ul #g2 {
+          height: 400px; } }
     #section-4 ul #g3 {
-      grid-area: g3; }
-
+      background-image: url("../img/gallery-3.jpg");
+      grid-area: g3;
+      background-size: 600px; }
+      @media (min-width: 768px) {
+        #section-4 ul #g3 {
+          background-size: 700px;
+          background-position: -200px -660px; } }
+      @media (min-width: 992px) {
+        #section-4 ul #g3 {
+          height: 400px;
+          background-size: 800px;
+          background-position: bottom; } }
 /* =============
     Section 5
 ============= */
@@ -639,16 +660,18 @@ header {
         grid-template-columns: 30% 70%;
         grid-template-areas: "section-5-photo section-5-text"; } }
     #section-5 #section-5-container #section-5-content #section-5-photo {
-      grid-area: section-5-photo; }
-      #section-5 #section-5-container #section-5-content #section-5-photo img {
-        display: block;
-        margin: 30px auto 10px; }
-        @media (min-width: 768px) {
-          #section-5 #section-5-container #section-5-content #section-5-photo img {
-            margin: 20px auto; } }
-        @media (min-width: 992px) {
-          #section-5 #section-5-container #section-5-content #section-5-photo img {
-            margin: 20px auto 40px; } }
+      grid-area: section-5-photo;
+      background-image: url("../img/circle.jpg");
+      background-size: cover;
+      height: 320px;
+      width: 320px;
+      background-position: bottom;
+      border-radius: 160px;
+      display: block;
+      margin: 30px auto 10px; }
+      @media (min-width: 992px) {
+        #section-5 #section-5-container #section-5-content #section-5-photo {
+          margin: 20px auto 40px 40px; } }
     #section-5 #section-5-container #section-5-content #section-5-text {
       grid-area: section-5-text;
       margin: 0 0 30px; }

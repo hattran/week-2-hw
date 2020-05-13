@@ -45,17 +45,18 @@
             #section-5-photo{
                 grid-area: section-5-photo;
 
-                img{
-                    display: block;
-                    margin: 30px auto 10px;
+                background-image: url("../img/circle.jpg");
+                background-size: cover;
+                height: 320px;
+                width: 320px;
+                background-position: bottom;
+                border-radius: 160px;
 
-                    @include md{
-                        margin: 20px auto;
-                    }
+                display: block;
+                margin: 30px auto 10px;
 
-                    @include lg{
-                        margin: 20px auto 40px;
-                    }
+                @include lg{
+                    margin: 20px auto 40px 40px;
                 }
             }
 
