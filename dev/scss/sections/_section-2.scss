@@ -87,15 +87,20 @@
         #section-2-photo{
             grid-area: section-2-photo;
 
-            img{
-                width: 100%;
-                padding: 0 0 30px;
+            background-image: url("../img/left-side.jpg");
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            margin: 0 0 30px;
 
-                @include md{
-                    padding: 30px 0;
-                }
+            @include md{
+                height: 50vh;
+                margin: 30px 0;
+            }
+
+            @include lg{
+                height: 60vh;
             }
         }
-    
     }
 }
