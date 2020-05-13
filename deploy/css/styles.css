@@ -535,9 +535,19 @@ header {
 /* =============
     Section 3
 ============= */
-#section-3 #section-3-hero img {
-  width: 100%; }
-
+#section-3 #section-3-hero {
+  background-image: url("../img/hero-2.jpg");
+  height: 60vh;
+  background-size: cover;
+  background-position: -35px 0; }
+  @media (min-width: 768px) {
+    #section-3 #section-3-hero {
+      height: 55vh;
+      background-position: center; } }
+  @media (min-width: 992px) {
+    #section-3 #section-3-hero {
+      height: 80vh;
+      background-position: center; } }
 #section-3 #section-3-text {
   grid-area: section-3-content;
   display: grid;

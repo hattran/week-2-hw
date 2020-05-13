@@ -5,8 +5,18 @@
 #section-3{
 
     #section-3-hero{
-        img{
-            width: 100%;
+        background-image: url("../img/hero-2.jpg");
+        height: 60vh;
+        background-size: cover;
+        background-position: -35px 0;
+
+        @include md{
+            height: 55vh;
+            background-position: center;
+        }
+
+        @include lg{
+            height: 80vh;
         }
     }
 
