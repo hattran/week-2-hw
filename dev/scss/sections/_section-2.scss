@@ -48,6 +48,7 @@
                 color: $orange;
                 text-align: center;
                 font-size: rem-calc(25);
+                margin: 25px 0 0;
 
                 @include md{
                     text-align: left;
@@ -58,7 +59,7 @@
             p{
                 text-align: center;
                 font-size: rem-calc(18);
-                padding: 0 0 10px;
+                margin: 15px 0 25px;
 
                 @include md{
                     text-align: left;

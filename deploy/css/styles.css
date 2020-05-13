@@ -485,7 +485,8 @@ header {
   #section-2 #section-2-container #section-2-text h3 {
     color: #F1733C;
     text-align: center;
-    font-size: 1.5625rem; }
+    font-size: 1.5625rem;
+    margin: 25px 0 0; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-text h3 {
         text-align: left;
@@ -493,7 +494,7 @@ header {
   #section-2 #section-2-container #section-2-text p {
     text-align: center;
     font-size: 1.125rem;
-    padding: 0 0 10px; }
+    margin: 15px 0 25px; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-text p {
         text-align: left;
