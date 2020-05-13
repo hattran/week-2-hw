@@ -331,7 +331,7 @@ h3 {
   font-weight: 500; }
 
 h2 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 /* =============
     Buttons
@@ -362,13 +362,17 @@ textarea {
 ============= */
 #footer ul {
   background-color: #7C9A80;
-  padding: 10px;
-  display: flex; }
-  #footer ul img {
-    justify-content: center; }
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #footer ul li:last-child {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; }
   #footer ul h6 {
-    color: #fff;
-    text-align: right; }
+    font-weight: 300;
+    color: #fff; }
 
 /* =============
     Section 1
@@ -413,7 +417,24 @@ textarea {
     #section-2 #section-2-container #section-2-content {
       grid-template-columns: 10% auto 10%; } }
 #section-2 #section-2-container #section-2-text {
-  grid-area: section-2-text; }
+  grid-area: section-2-text;
+  margin: 20px 0; }
+  #section-2 #section-2-container #section-2-text h3 {
+    color: #F1733C;
+    text-align: center;
+    font-size: 1.5625rem; }
+  #section-2 #section-2-container #section-2-text p {
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0 0 10px; }
+  #section-2 #section-2-container #section-2-text hr {
+    height: 2px;
+    background-color: #7C9A80;
+    border: none; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-container #section-2-text {
+      display: block;
+      margin: auto 0; } }
   @media (min-width: 992px) {
     #section-2 #section-2-container #section-2-text {
       display: block;
@@ -424,29 +445,35 @@ textarea {
 /* =============
     Section 3
 ============= */
-#section-3 article img {
+#section-3 #section-3-hero img {
   width: 100%; }
 
 #section-3 #section-3-text {
+  grid-area: section-3-content;
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-3-text ."; }
+  #section-3 #section-3-text h2 {
+    color: #FDAF01;
+    text-align: center;
+    font-size: 1.875rem; }
+  #section-3 #section-3-text hr {
+    height: 2px;
+    background-color: #7C9A80;
+    border: none; }
   #section-3 #section-3-text article {
-    grid-area: section-3-text; }
+    grid-area: section-3-text;
+    margin: 20px 0 10px; }
   @media (min-width: 768px) {
     #section-3 #section-3-text {
       display: grid;
       grid-template-columns: 10% auto 10%;
       grid-template-areas: ". section-3-text ."; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     #section-3 #section-3-text {
       display: grid;
-      grid-template-columns: 15% auto 15%;
+      grid-template-columns: 30% auto 30%;
       grid-template-areas: ". section-3-text ."; } }
-  @media (min-width: 1200px) {
-    #section-3 #section-3-text {
-      display: grid;
-      grid-template-columns: auto 1200px auto; } }
 /* =============
     Section 4
 ============= */
@@ -481,40 +508,53 @@ textarea {
 /* =============
     Section 5
 ============= */
-#section-5 {
+#section-5 p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+  color: #AA700F; }
+
+@media (min-width: 1200px) {
+  #section-5 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-5-desktop ."; } }
+
+#section-5 #section-5-container {
+  grid-area: section-5-desktop;
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-5-content ."; }
-  #section-5 p {
-    text-align: justify;
-    font-size: 18px;
-    color: #AA700F; }
   @media (min-width: 1200px) {
-    #section-5 {
+    #section-5 #section-5-container {
       grid-template-columns: auto 1200px auto; } }
-  #section-5 #section-5-content {
+  #section-5 #section-5-container #section-5-content {
     display: grid;
     grid-area: section-5-content;
     grid-template-rows: 2;
     grid-template-areas: "section-5-photo" "section-5-text";
     grid-gap: 20px; }
     @media (min-width: 992px) {
-      #section-5 #section-5-content {
+      #section-5 #section-5-container #section-5-content {
         grid-template-columns: 30% 70%;
         grid-template-areas: "section-5-photo section-5-text"; } }
-    #section-5 #section-5-content #section-5-photo {
+    #section-5 #section-5-container #section-5-content #section-5-photo {
       grid-area: section-5-photo; }
-      #section-5 #section-5-content #section-5-photo img {
+      #section-5 #section-5-container #section-5-content #section-5-photo img {
         display: block;
-        margin: 20px auto; }
+        margin: 30px auto 10px; }
+        @media (min-width: 768px) {
+          #section-5 #section-5-container #section-5-content #section-5-photo img {
+            margin: 20px auto; } }
         @media (min-width: 992px) {
-          #section-5 #section-5-content #section-5-photo img {
+          #section-5 #section-5-container #section-5-content #section-5-photo img {
             margin: 20px auto 40px; } }
-    #section-5 #section-5-content #section-5-text {
-      grid-area: section-5-text; }
+    #section-5 #section-5-container #section-5-content #section-5-text {
+      grid-area: section-5-text;
+      margin: 0 0 30px; }
       @media (min-width: 768px) {
-        #section-5 #section-5-content #section-5-text {
+        #section-5 #section-5-container #section-5-content #section-5-text {
           margin: 0 90px 40px; } }
       @media (min-width: 992px) {
-        #section-5 #section-5-content #section-5-text {
+        #section-5 #section-5-container #section-5-content #section-5-text {
           margin: auto 100px; } }

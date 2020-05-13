@@ -7,53 +7,69 @@
     p{
         text-align: justify;
         font-size: 18px;
+        line-height: 25px;
         color: $brown;
     }
 
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-5-content .";
-
     @include xl{
+        display: grid;
         grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-5-desktop .";
     }
 
-    #section-5-content{
+    #section-5-container{
+        grid-area: section-5-desktop;
+        
         display: grid;
-        grid-area: section-5-content;
-        grid-template-rows: 2;
-        grid-template-areas:
-        "section-5-photo"
-        "section-5-text";
-        grid-gap: 20px;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section-5-content .";
 
-        @include lg{
-            grid-template-columns: 30% 70%;
-            grid-template-areas: "section-5-photo section-5-text";
+        @include xl{
+            grid-template-columns: auto 1200px auto;
         }
 
-        #section-5-photo{
-            grid-area: section-5-photo;
-
-            img{
-                display: block;
-                margin: 20px auto;
-
-                @include lg{
-                    margin: 20px auto 40px;
-                }
-            }
-        }
-
-        #section-5-text{
-            grid-area: section-5-text;
-
-            @include md{
-                margin: 0 90px 40px;
-            }
+        #section-5-content{
+            display: grid;
+            grid-area: section-5-content;
+            grid-template-rows: 2;
+            grid-template-areas:
+            "section-5-photo"
+            "section-5-text";
+            grid-gap: 20px;
 
             @include lg{
-                margin: auto 100px;
+                grid-template-columns: 30% 70%;
+                grid-template-areas: "section-5-photo section-5-text";
+            }
+
+            #section-5-photo{
+                grid-area: section-5-photo;
+
+                img{
+                    display: block;
+                    margin: 30px auto 10px;
+
+                    @include md{
+                        margin: 20px auto;
+                    }
+
+                    @include lg{
+                        margin: 20px auto 40px;
+                    }
+                }
+            }
+
+            #section-5-text{
+                grid-area: section-5-text;
+                margin: 0 0 30px;
+
+                @include md{
+                    margin: 0 90px 40px;
+                }
+
+                @include lg{
+                    margin: auto 100px;
+                }
             }
         }
     }

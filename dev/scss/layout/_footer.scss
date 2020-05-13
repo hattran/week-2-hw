@@ -3,19 +3,23 @@
 ============= */
 
 #footer{
-    
     ul{
         background-color: $light-green;
-        padding: 10px;
+        margin: 0;
+        // padding: 10px;
         display: flex;
+        justify-content: center;
+        align-items: center;
 
-        img{
-            justify-content: center;
+        li:last-child{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
         }
         
         h6{
+            font-weight: 300;
             color: $white;
-            text-align: right;
         }
     }
 }

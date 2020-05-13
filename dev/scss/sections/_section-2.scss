@@ -48,6 +48,30 @@
 
         #section-2-text{
             grid-area: section-2-text;
+            margin: 20px 0;
+
+            h3{
+                color: $orange;
+                text-align: center;
+                font-size: rem-calc(25);
+            }
+
+            p{
+                text-align: center;
+                font-size: rem-calc(18);
+                padding: 0 0 10px;
+            }
+
+            hr{
+                height: 2px;
+                background-color: $light-green;
+                border: none;
+            }
+
+            @include md{
+                display: block;
+                margin: auto 0;
+            }
 
             @include lg{
                 display: block;

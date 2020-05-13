@@ -4,19 +4,35 @@
 
 #section-3{
 
-    article{
+    #section-3-hero{
         img{
             width: 100%;
         }
     }
 
     #section-3-text{
+
+        grid-area: section-3-content;
+
+        h2{
+            color: $yellow;
+            text-align: center;
+            font-size: rem-calc(30);
+        }
+
+        hr{
+            height: 2px;
+            background-color: $light-green;
+            border: none;
+        }
+
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas: ". section-3-text .";
 
         article{
             grid-area: section-3-text;
+            margin: 20px 0 10px;
         }
 
         @include md{
@@ -25,15 +41,10 @@
             grid-template-areas: ". section-3-text ."
         }
 
-        @include xl{
+        @include lg{
             display: grid;
-            grid-template-columns: 15% auto 15%;
+            grid-template-columns: 30% auto 30%;
             grid-template-areas: ". section-3-text ."
-        }
-
-        @include xl{
-            display: grid;
-            grid-template-columns: auto 1200px auto;
         }
     }
 }  
